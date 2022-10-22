@@ -1,0 +1,7 @@
+name = "PyNNTraining"
+uuid = "013e1a4a-88fe-473f-be94-6c6af62e62ad"
+authors = ["lorenzoh <lorenz.ohly@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"

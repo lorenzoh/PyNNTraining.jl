@@ -1,0 +1,4 @@
+[deps]
+ModuleInfo = "3c3ff5e7-c68c-4a09-80d1-9526a1e9878a"
+Pollen = "c88717ad-5130-4874-a664-5a9aba5ec443"
+PyNNTraining = "013e1a4a-88fe-473f-be94-6c6af62e62ad"
