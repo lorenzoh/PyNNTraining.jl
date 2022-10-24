@@ -1,0 +1,40 @@
+[input]
+base_directory = "."
+url_prefix = ""
+
+    [[input.files]]
+    title = "memoryusage"
+    contents = "memoryusage"
+    url = "PyNNTraining@dev/ref/PyNNTraining.memoryusage"
+    [[input.files]]
+    title = "PyNNTraining/topytorch.jl"
+    contents = "FluxTraining Callback device PyObject todevice ToDevice device torch device device ToDevice Base show io IO cb print io cb device type FluxTraining resolveconflict FluxTraining Scheduler to FluxTraining RunFirst to FluxTraining on e EpochBegin p cb learner FluxTraining on e p cb todevice learner FluxTraining on e StepBegin p cb learner FluxTraining on e p cb todevice learner cb device type memusage memusage memusage FluxTraining stateaccess model Write params Write step Write optimizer Read torch cuda is_available torch device torch device _ismodule m TorchModuleWrapper _ismodule m PyObject PyCall builtin isinstance m torch nn Module _ismodule _ x device fmap x exclude y Flux _isleaf y _ismodule y leaf leaf PyObject leaf TorchModuleWrapper leaf device type Flux gpu leaf Flux cpu leaf info CUDA MemoryInfo info free_bytes info total_bytes full GC gc full torch cuda empty_cache \n"
+    url = "PyNNTraining@dev/src/topytorch.jl"
+    [[input.files]]
+    title = "totorch"
+    contents = "totorch"
+    url = "PyNNTraining@dev/ref/PyNNTraining.totorch"
+    [[input.files]]
+    title = "PyNNTraining"
+    contents = "PyNNTraining"
+    url = "PyNNTraining@dev/ref/PyNNTraining"
+    [[input.files]]
+    title = "PyNNTraining/PyNNTraining.jl"
+    contents = "PyNNTraining CUDA CUDA Flux Flux FluxTraining FluxTraining Callback ToDevice Read Write FluxTraining Events Event EpochBegin StepBegin Functors Functors fmap InlineTest Optimisers PyCall PyCall PyObject PyCallChainRules Torch torch TorchModuleWrapper include \n"
+    url = "PyNNTraining@dev/src/PyNNTraining.jl"
+    [[input.files]]
+    title = "ToPyTorch"
+    contents = "ToPyTorch"
+    url = "PyNNTraining@dev/ref/PyNNTraining.ToPyTorch"
+    [[input.files]]
+    title = "default_torch_device"
+    contents = "default_torch_device"
+    url = "PyNNTraining@dev/ref/PyNNTraining.default_torch_device"
+    [[input.files]]
+    title = "PyNNTraining.jl"
+    contents = "PyNNTraining.jl\nBuild Status\nPyNNTraining.jl is an extension to FluxTraining.jl that allows you to train PyTorch models, without boilerplate, and compatible with the existing Julia ecosystem.\nHow to use\nUse PyCall.jl to load a PyTorch model\n\nCreate the ToPyTorch callback\n\nPass both to FluxTraining.jl's Learner\n\nTrain as usual\n\n\nFull training example\nHere we use a pretrained model from torchvision and finetune it. We leave the data loading and preprocessing to FastAI.jl:\nFastAI FastVision PyNNTraining FluxTraining PyCall Optimisers torch torchvision funcexp pyimport pyimport pyimport loadresnet c Int model torch hub load pretrained funcexp replace_all_batch_norm_modules_ model model fc torch nn Linear model fc in_features c model model loadresnet callback data blocks load datarecipes task ImageClassificationSingle blocks learner tasklearner task data callbacks callback Metrics accuracy model model optimizer Optimisers Adam batchsize fitonecycle! learner \nAcknowledgements\nPyNNTraining.jl is a wrapper around PyCallChainRules.jl which handles all the heavy lifting of integrating with Python ADs and sharing array memories.\nLimitations\nPyCall.jl doesn't free memory frequently enough when running many allocating operations from Julia. To circumvent this, the ToPyTorch manually frees the memory during training. The downside of this is that the maximum memory allocation is a bit lower than what your GPU supports\n\nOnly PyTorch models that are compatible with functorch can be used. In many cases, this will mean that you have to adapt a model's batch normalization layers as described on this page in the functorch docs.\n\nOnly explicit optimisers from Optimisers.jl are supported, implicit parameters do not work.\n\n\n\n"
+    url = "PyNNTraining@dev/doc/README.md"
+    [[input.files]]
+    title = "gc_pytorch"
+    contents = "gc_pytorch"
+    url = "PyNNTraining@dev/ref/PyNNTraining.gc_pytorch"
