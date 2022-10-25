@@ -15,6 +15,7 @@ PyCallChainRules = "b12ccfe2-7326-416f-9f4f-cd3183bd9fe8"
 SnoopPrecompile = "66db9d55-30c0-4569-8b51-7e840670fc0c"
 
 [compat]
+Flux = "0.13"
 FluxTraining = "0.3"
 PyCallChainRules = "0.4"
 julia = "1"
